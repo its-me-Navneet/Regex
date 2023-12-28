@@ -11,7 +11,13 @@ public class App {
      Pattern pattern = Pattern.compile(regex) ; 
      Matcher matcher = pattern.matcher(name) ; 
      boolean match = matcher.matches() ;
-     System.out.println(match);
+     System.out.println(match); 
+
+
+     String phone = "91 7258076955";
+     String regexP = "^[91]{1,2}\s[1-9]{1,1}[0-9]{9,9}$" ;
+
+     System.out.println(Pattern.matches(regexP,phone));
 
     }
 }
