@@ -6,8 +6,8 @@ public class App {
        
      // User Registration validation 
 
-     String name = "Navneet Kumar" ; 
-     String regex = "^[A-Z]+[A-Za-z]{2,}\\s[A-za-z]*$";
+     String name = "Navneet" ; 
+     String regex = "^[A-Z][A-Za-z]{2,}$";
      Pattern pattern = Pattern.compile(regex) ; 
      Matcher matcher = pattern.matcher(name) ; 
      boolean match = matcher.matches() ;
