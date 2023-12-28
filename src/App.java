@@ -6,8 +6,8 @@ public class App {
        
      // User Registration validation 
     
-     String password ="xyhssabsd" ; 
-     String regex = "(.){8,}" ;
+     String password ="asdbshADasdas" ; 
+     String regex = "(?=.*[a-z])(.){8,}" ;
      System.out.println(Pattern.matches(regex,password));
 
     }
