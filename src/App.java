@@ -15,7 +15,7 @@ public class App {
 
 
      String phone = "91 7258076955";
-     String regexP = "^[91]{1,2}\s[1-9]{1,1}[0-9]{9,9}$" ;
+     String regexP = "^[9]{1}[1]{1}\\s[1-9]{1,1}[0-9]{9}$" ;
 
      System.out.println(Pattern.matches(regexP,phone));
 
