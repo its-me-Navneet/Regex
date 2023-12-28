@@ -6,9 +6,10 @@ public class App {
        
      // User Registration validation 
     
-     String password ="asdbshADasdas" ; 
-     String regex = "(?=.*[a-z])(.){8,}" ;
+     String password ="asdbs2hAasdas" ; 
+     String regex = "(?=.*[A-Z])(.){8,}" ; 
+     regex ="(?=.*[0-9])" + regex  ;
      System.out.println(Pattern.matches(regex,password));
-
+     
     }
 }
