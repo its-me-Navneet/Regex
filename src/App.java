@@ -17,7 +17,7 @@ public class App {
     
      // char digit not all digit - @
      String email ="xyz@ge.com" ; 
-     String regexE = "^[a-zA-Z0-9](?!.*[.][.])(?!.*[@][.])(?!.*[.][@])(?=[^@]*[@][^@]*$)[a-zA-z0-9@.+-]{3,}[a-zA-Z]{2,2}$" ; 
+     String regexE = "^[a-zA-Z0-9]+([._%+-]{0,1}[a-zA-Z0-9]+)*@[a-zA-Z0-9]+\\.[a-zA-Z]{2,}(\\.[a-zA-Z]{2,})?$" ; 
  
       for(String Email :valid ){
       String ans =Pattern.matches(regexE, Email)==true ? "Valid":"Invalid" ; 
